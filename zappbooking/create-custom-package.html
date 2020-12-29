@@ -1,0 +1,762 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>ZappBooking</title>
+<link href="https://fonts.googleapis.com/css?family=Cabin:400,600" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles/style.css" />
+</head>
+<body>
+<header id="masthead" class="site-header site-header--layout-1 site-header--fluid site-header--absolute ">
+    <div class="site-header__container d-lg-flex justify-content-lg-between align-items-lg-center ">
+        <div class="d-lg-flex align-items-lg-center">
+            <div class="site-header__logo">
+                <a href="index.html">
+                <h1 class="screen-reader-text">ZappBooking</h1>
+                <img src="assets/images/logo-3.png" alt="ZappBooking" class="logo-1"/>
+                </a>
+            </div>
+            <!-- site-header__logo -->
+        </div>
+        <!-- d-lg-flex-->
+        <div class="d-lg-flex align-items-lg-center">
+            <ul class="min-list main-navigation main-navigation--white">
+                <li>
+                <a href="index.html">Home</a>
+                </li>
+                <li>
+                <a href="bookings.html">Bookings</a>
+                </li>
+                <li>
+                <a href="aboutUs.html">About us</a>
+                </li>
+                <li>
+                <a href="contactUs.html">Contact</a>
+                </li>
+            </ul>
+
+            <div class="user-action">
+                <a href="notification.html" class="sign-in c-white">
+                <i class="fa fa-bell"></i>
+                </a>
+                <a href="login.html" class="sign-in c-white">
+                <i class="fa fa-user"></i>
+                Sign in
+                </a>
+            </div>
+        </div>
+        <!-- d-lg-flex-->
+        <div class="d-lg-none nav-mobile">
+            <a href="#" class="nav-toggle js-nav-toggle nav-toggle--white">
+            <span></span>
+            </a>
+        </div>
+        <!--.nav-mobile -->
+    </div>
+    <!--.site-header__container -->
+</header>
+        <!-- #masthead -->
+        <section class="page-banner page-banner--layout-1 parallax" >
+            <div class="container">
+                <div class="page-banner__container animated fadeInUp">
+
+                    <div class="page-banner__textcontent t-center">
+                        <h2 class="page-banner__title c-secondary">Custom Package</h2>
+                        <p class="page-banner__subtitle c-white">Create your own custom package here.</p>
+                    </div>
+                    <!-- .page-banner__textcontent -->
+
+
+                    <div class="main-search-container">
+                        <form >
+                        	<div class="main-search main-search--layout-1 bg-mirage">
+                             <div class="main-search__group main-search__group--primary">
+                                <label for="person" class="c-white">Person</label>
+                                <input type="number" name="name" id="person" class="form-input" placeholder="2" />
+                            </div>
+                            
+                            <div class="main-search__group main-search__group--primary">
+                                <label for="check-in" class="c-white">Tour Starting</label>
+                                <input type="text" name="name" id="check-in" class="form-input" placeholder="DD-MM-YYYY" data-dd-format="d-m-Y"/>
+                            </div>
+
+                            <div class="main-search__group main-search__group--primary">
+                                <label for="time" class="c-white">Arrival Time</label>
+                                <input type="Time" name="name" id="person" class="form-input" placeholder="" />
+                            </div>
+
+                            <div class="main-search__group main-search__group--primary">
+                                <label for="check-out" class="c-white">Tour Ending</label>
+                                <input type="text" name="name" id="check-out" class="form-input" placeholder="DD-MM-YYYY" data-dd-format="d-m-Y" />
+                            </div>
+                            <div class="main-search__group main-search__group--primary" >
+                                <label for="main-search-name" class="c-white">Stay in</label>
+                                <select
+                                  class=" form-input"
+                                  name="categories"
+                                  id="categories"
+                                  data-placeholder="Choose a category..."
+                                >
+                                  <option value="#place_name">#place_name</option>
+                                  <option value="#place_name">BISNAKHANDI</option>
+                                  <option value="#place_name">RATARGUL</option>
+                                  <option value="#place_name">LALAKHAL</option>
+                                  <option value="#place_name">#place_name</option>
+                                  <option value="#place_name">#place_name</option>
+                                </select>
+                            </div> 
+
+                            <div class="main-search__group main-search__group--primary form-group">
+                                <label for="categories" class="c-white">Visit </label>
+                                <button class=" form-input listing-expand js-expand">
+                                    Select...
+                                </button>
+
+                                
+                              </div>
+                            <!-- .main-search__group -->
+                            <div class="main-search__group main-search__group--secondary">
+                                <button type="submit" class="button button--medium button--square button--primary"><!--<i class="fa fa-search"></i>--> Search</button>
+                            </div>   
+                            </div>
+                            <div class="listing-more-filter bg-mirage c-white" >
+                                <div class="listing-more-filter__inner">
+                                    <h6>Select places where you want to visit...</h6>
+                                    <ul class="min-list">
+                                            <li>
+                                              <div class="form-group">
+                                                <label for="accommodation" class="icheck_label">
+                                                  <input type="checkbox" name="accommodation" id="accommodation">
+                                                  BISNAKHANDI
+                                                </label>
+                                              </div>
+                                            </li>
+
+                                            <li>
+                                              <div class="form-group">
+                                                <label for="apartments" class="icheck_label">
+                                                  <input type="checkbox" name="apartments" id="apartments">
+                                                  RATARGUL
+                                                </label>
+                                              </div>
+                                            </li>
+
+                                            <li>
+                                              <div class="form-group">
+                                                <label for="car-rental" class="icheck_label">
+                                                  <input type="checkbox" name="car-rental" id="car-rental">
+                                                  LALAKHAL
+                                                </label>
+                                              </div>
+                                            </li>
+
+                                            <li>
+                                              <div class="form-group">
+                                                <label for="street-parking" class="icheck_label">
+                                                  <input type="checkbox" name="street-parking" id="street-parking">
+                                                  #place_name
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="form-group">
+                                                <label for="accommodation" class="icheck_label">
+                                                  <input type="checkbox" name="accommodation" id="accommodation">
+                                                  BISNAKHANDI
+                                                </label>
+                                              </div>
+                                            </li>
+
+                                            <li>
+                                              <div class="form-group">
+                                                <label for="apartments" class="icheck_label">
+                                                  <input type="checkbox" name="apartments" id="apartments">
+                                                  RATARGUL
+                                                </label>
+                                              </div>
+                                            </li>
+
+                                            <li>
+                                              <div class="form-group">
+                                                <label for="car-rental" class="icheck_label">
+                                                  <input type="checkbox" name="car-rental" id="car-rental">
+                                                  LALAKHAL
+                                                </label>
+                                              </div>
+                                            </li>
+
+                                            <li>
+                                              <div class="form-group">
+                                                <label for="street-parking" class="icheck_label">
+                                                  <input type="checkbox" name="street-parking" id="street-parking">
+                                                  #place_name
+                                                </label>
+                                              </div>
+                                            </li>
+
+                                            <li>
+                                              <div class="form-group">
+                                                <label for="smoking-allowed" class="icheck_label">
+                                                  <input type="checkbox" name="smoking-allowed" id="smoking-allowed">
+                                                  #place_name
+                                                </label>
+                                              </div>
+                                            </li>
+
+                                            <li>
+                                              <div class="form-group">
+                                                <label for="wireless-internet" class="icheck_label">
+                                                  <input type="checkbox" name="wireless-internet" id="wireless-internet">
+                                                  #place_name
+                                                </label>
+                                              </div>
+                                            </li>
+
+                                            <li class="form-group">
+                                              <label for="instant-book" class="icheck_label">
+                                                <input type="checkbox" name="instant-book" id="instant-book">
+                                                #place_name
+                                              </label>
+                                            </li>
+
+                                            <li class="form-group">
+                                              <label for="friendly-workspace" class="icheck_label">
+                                                <input type="checkbox" name="friendly-workspace" id="friendly-workspace">
+                                                #place_name
+                                              </label>
+                                            </li>
+                                     </ul>
+                                </div>
+                            </div><!-- .listing-more-filter -->
+                        </form>
+
+                    </div>
+                    <!-- .main-search-container -->
+                </div>
+                <!-- .page-banner__container -->
+            </div>
+            <!-- .container -->
+        </section>
+        <!-- .page-banner -->
+        
+        <!-- .category -->
+        <div class="listing-main bg-wild-sand">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+            <div class="container bg-white" style="padding-top: 20px;padding-bottom: 20px;margin-bottom: 10px;">
+                <h2 class="page-section__title t-center">Accommodations</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="listing hover-effect shadow">
+                            <div class="listing__wrapper">
+                                <div class="listing__thumbnail">
+                                    <a href="details-hotel.html">
+                                        <img src="assets/images/uploads/listing-1.jpg" alt="Grand Sultan" />
+                                        <span class="label label--primary">Hotel</span>
+                                        <span class="favorite label--secondary">10% Off</span>
+
+                                    </a>
+                                </div>
+                                <!-- .listing__thumbnail -->
+                                <div class="listing__detail">
+                                    <h3 class="listing__title">
+                                        <a href="details-hotel.html">Grand Sultan</a>
+                                    </h3>
+                                    <p class="listing__location c-dusty-gray">
+                                        <i class="fa fa-map-marker"></i> Jaflong, Ratargul, Bichanakandi
+                                    </p>
+                                    <p class="listing__review c-dusty-gray">
+                                        <span class="stars-outer" data-rating="5">
+                                            <span class="stars-inner"></span>
+                                        </span>
+                                        <span>(5 Reviews)</span>
+                                    </p>
+                                </div>
+                                <!-- .listing__detail -->
+                            </div>
+                            <!-- .listing__wrapper -->
+                        </div>
+                        <!-- .listing -->
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-md-4">
+                        <div class="listing hover-effect shadow">
+                            <div class="listing__wrapper">
+                                <div class="listing__thumbnail">
+                                    <a href="details-temp.html">
+                                        <img src="assets/images/uploads/listing-2.jpg" alt="Grand Sultan" />
+                                        <span class="label label--primary">Resort</span>
+                                        <span class="favorite label--secondary">10% Off</span>
+                                    </a>
+                                </div>
+                                <!-- .listing__thumbnail -->
+                                <div class="listing__detail">
+                                    <h3 class="listing__title">
+                                        <a href="details-temp.html">Grand Sultan</a>
+                                    </h3>
+                                    <p class="listing__location c-dusty-gray">
+                                        <i class="fa fa-map-marker"></i>
+                                        Jaflong, Ratargul, Bichanakandi
+                                    </p>
+                                    <p class="listing__review c-dusty-gray">
+                                        <span class="stars-outer" data-rating="5">
+                                            <span class="stars-inner"></span>
+                                        </span>
+                                        <span>(5 Reviews)</span>
+                                    </p>
+                                </div>
+                                <!-- .listing__detail -->
+                            </div>
+                            <!-- .listing__wrapper -->
+                        </div>
+                        <!-- .listing -->
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-md-4">
+                        <div class="listing hover-effect  shadow">
+                            <div class="listing__wrapper">
+                                <div class="listing__thumbnail">
+                                    <a href="details-hotel.html">
+                                        <img src="assets/images/uploads/listing-3.jpg" alt="Grand Sultan" />
+                                        <span class="label label--primary">Hotel</span>
+                                        <span class="favorite label--secondary">10% Off</span>
+                                    </a>
+                                </div>
+                                <!-- .listing__thumbnail -->
+                                <div class="listing__detail">
+                                    <h3 class="listing__title">
+                                        <a href="details-hotel.html">Grand Sultan</a>
+                                    </h3>
+                                    <p class="listing__location c-dusty-gray">
+                                        <i class="fa fa-map-marker"></i>
+                                        Jaflong, Ratargul, Bichanakandi
+                                    </p>
+                                    <p class="listing__review c-dusty-gray">
+                                        <span class="stars-outer" data-rating="5">
+                                            <span class="stars-inner"></span>
+                                        </span>
+                                        <span>(5 Reviews)</span>
+                                    </p>
+                                </div>
+                                <!-- .listing__detail -->
+                            </div>
+                            <!-- .listing__wrapper -->
+                        </div>
+                        <!-- .listing -->
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-md-4">
+                        <div class="listing hover-effect  shadow">
+                            <div class="listing__wrapper">
+                                <div class="listing__thumbnail">
+                                    <a href="details-hotel.html">
+                                        <img src="assets/images/uploads/listing-1.jpg" alt="Grand Sultan" />
+                                        <span class="label label--primary">Hotel</span>
+                                        <span class="favorite label--secondary">10% Off</span>
+                                    </a>
+                                </div>
+                                <!-- .listing__thumbnail -->
+                                <div class="listing__detail">
+                                    <h3 class="listing__title">
+                                        <a href="details-hotel.html">Grand Sultan</a>
+                                    </h3>
+                                    <p class="listing__location c-dusty-gray">
+                                        <i class="fa fa-map-marker"></i>
+                                        Jaflong, Ratargul, Bichanakandi
+                                    </p>
+                                    <p class="listing__review c-dusty-gray">
+                                        <span class="stars-outer" data-rating="5">
+                                            <span class="stars-inner"></span>
+                                        </span>
+                                        <span>(5 Reviews)</span>
+                                    </p>
+                                </div>
+                                <!-- .listing__detail -->
+                            </div>
+                            <!-- .listing__wrapper -->
+                        </div>
+                        <!-- .listing -->
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-md-4">
+                        <div class="listing hover-effect shadow">
+                            <div class="listing__wrapper">
+                                <div class="listing__thumbnail">
+                                    <a href="details-hotel.html">
+                                        <img src="assets/images/uploads/listing-2.jpg" alt="Grand Sultan" />
+                                        <span class="label label--primary">Resort</span>
+                                        <span class="favorite label--secondary">10% Off</span>
+                                    </a>
+                                </div>
+                                <!-- .listing__thumbnail -->
+                                <div class="listing__detail">
+                                    <h3 class="listing__title">
+                                        <a href="details-hotel.html">Grand Sultan</a>
+                                    </h3>
+                                    <p class="listing__location c-dusty-gray">
+                                        <i class="fa fa-map-marker"></i>
+                                        Jaflong, Ratargul, Bichanakandi
+                                    </p>
+                                    <p class="listing__review c-dusty-gray">
+                                        <span class="stars-outer" data-rating="5">
+                                            <span class="stars-inner"></span>
+                                        </span>
+                                        <span>(5 Reviews)</span>
+                                    </p>
+                                </div>
+                                <!-- .listing__detail -->
+                            </div>
+                            <!-- .listing__wrapper -->
+                        </div>
+                        <!-- .listing -->
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-md-4">
+                        <div class="listing hover-effect  shadow">
+                            <div class="listing__wrapper">
+                                <div class="listing__thumbnail">
+                                    <a href="details-hotel.html">
+                                        <img src="assets/images/uploads/listing-3.jpg" alt="Grand Sultan" />
+                                        <span class="label label--primary">Hotel</span>
+                                        <span class="favorite label--secondary">10% Off</span>
+                                    </a>
+                                </div>
+                                <!-- .listing__thumbnail -->
+                                <div class="listing__detail">
+                                    <h3 class="listing__title">
+                                        <a href="details-hotel.html">Grand Sultan</a>
+                                    </h3>
+                                    <p class="listing__location c-dusty-gray">
+                                        <i class="fa fa-map-marker"></i>
+                                        Jaflong, Ratargul, Bichanakandi
+                                    </p>
+                                    <p class="listing__review c-dusty-gray">
+                                        <span class="stars-outer" data-rating="5">
+                                            <span class="stars-inner"></span>
+                                        </span>
+                                        <span>(5 Reviews)</span>
+                                    </p>
+                                </div>
+                                <!-- .listing__detail -->
+                            </div>
+                            <!-- .listing__wrapper -->
+                        </div>
+                        <!-- .listing -->
+                    </div>
+                    <!-- .col -->
+
+                </div>
+                <!-- .row -->
+                <div class="t-center load-more">
+                    
+                    <button class="button button--secoundary load-more-btn button--pill">Prev.</button>
+                    <button class="button button--primary load-more-btn button--pill">1</button>
+                    <button class="button button--secoundary load-more-btn button--pill">2</button>
+                    <button class="button button--secoundary load-more-btn button--pill">3</button>
+                    <button class="button button--secoundary load-more-btn button--pill">...</button>
+                    <button class="button button--secoundary load-more-btn button--pill">Next</button>
+                </div>
+            </div>
+            <!-- .container -->
+            
+            <div class="container bg-white" style="padding-top: 20px;padding-bottom: 20px;margin-bottom: 10px;">
+                <h2 class="page-section__title t-center">Available Transports</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="listing hover-effect shadow">
+                            <div class="listing__wrapper">
+                                <div class="listing__thumbnail">
+                                    <a href="details-trans.html">
+                                        <img src="assets/images/uploads/listing-1.jpg" alt="Grand Sultan" />
+                                        <span class="label label--primary">Capability N Persons</span>
+                                        <span class="favorite label--secondary">10% Off</span>
+                                    </a>
+                                </div>
+                                <!-- .listing__thumbnail -->
+                                <div class="listing__detail">
+                                    <h3 class="listing__title">
+                                        <a href="details-trans.html">#Car Name</a>
+                                    </h3>
+                                    <p class="listing__location c-dusty-gray">
+                                        BDT #price
+                                    </p>
+
+                                    <div class="pricing-table__body">
+                                                    <ul class="pricing-table__features min-list">
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">5 Listings/Week</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">1$ for first billing</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Unlimited Availability</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Featured In the Results</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Add Facebook Page To Sidebar</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Embed Video In Listing</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Embed Timekit (Booking System)</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Shema Markup</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Contact Form</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Social Networks</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Publish On Map</li>
+                                                    </ul>
+                                                </div>
+                                    <p class="listing__review c-dusty-gray">
+                                        <span class="stars-outer" data-rating="5">
+                                            <span class="stars-inner"></span>
+                                        </span>
+                                        <span>(5 Reviews)</span>
+                                    </p>
+                                </div>
+                                <!-- .listing__detail -->
+                            </div>
+                            <!-- .listing__wrapper -->
+                        </div>
+                        <!-- .listing -->
+                    </div>
+                    <!-- .col -->
+                    <div class="col-md-4">
+                        <div class="listing hover-effect shadow">
+                            <div class="listing__wrapper">
+                                <div class="listing__thumbnail">
+                                    <a href="details-trans.html">
+                                        <img src="assets/images/uploads/listing-1.jpg" alt="Grand Sultan" />
+                                        <span class="label label--primary">Capability N Persons</span>
+                                        <span class="favorite label--secondary">10% Off</span>
+                                    </a>
+                                </div>
+                                <!-- .listing__thumbnail -->
+                                <div class="listing__detail">
+                                    <h3 class="listing__title">
+                                        <a href="details-trans.html">#Car Name</a>
+                                    </h3>
+                                    <p class="listing__location c-dusty-gray">
+                                        BDT #price
+                                    </p>
+
+                                    <div class="pricing-table__body">
+                                                    <ul class="pricing-table__features min-list">
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">5 Listings/Week</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">1$ for first billing</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Unlimited Availability</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Featured In the Results</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Add Facebook Page To Sidebar</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Embed Video In Listing</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Embed Timekit (Booking System)</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Shema Markup</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--not-supported">Contact Form</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--not-supported">Social Networks</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--not-supported">Publish On Map</li>
+                                                    </ul>
+                                                </div>
+                                    <p class="listing__review c-dusty-gray">
+                                        <span class="stars-outer" data-rating="5">
+                                            <span class="stars-inner"></span>
+                                        </span>
+                                        <span>(5 Reviews)</span>
+                                    </p>
+                                </div>
+                                <!-- .listing__detail -->
+                            </div>
+                            <!-- .listing__wrapper -->
+                        </div>
+                        <!-- .listing -->
+                    </div>
+                    <!-- .col -->
+                    <div class="col-md-4">
+                        <div class="listing hover-effect shadow">
+                            <div class="listing__wrapper">
+                                <div class="listing__thumbnail">
+                                    <a href="details-trans.html">
+                                        <img src="assets/images/uploads/listing-1.jpg" alt="Grand Sultan" />
+                                        <span class="label label--primary">Capability N Persons</span>
+                                        <span class="favorite label--secondary">10% Off</span>
+                                    </a>
+                                </div>
+                                <!-- .listing__thumbnail -->
+                                <div class="listing__detail">
+                                    <h3 class="listing__title">
+                                        <a href="details-trans.html">#Car Name</a>
+                                    </h3>
+                                    <p class="listing__location c-dusty-gray">
+                                        BDT #price
+                                    </p>
+
+                                    <div class="pricing-table__body">
+                                                    <ul class="pricing-table__features min-list">
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">5 Listings/Week</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">1$ for first billing</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Unlimited Availability</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Featured In the Results</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Add Facebook Page To Sidebar</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Embed Video In Listing</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Embed Timekit (Booking System)</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Shema Markup</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Contact Form</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Social Networks</li>
+                                                        <li class="pricing-table__feature pricing-table__feature--supported">Publish On Map</li>
+                                                    </ul>
+                                                </div>
+                                    <p class="listing__review c-dusty-gray">
+                                        <span class="stars-outer" data-rating="5">
+                                            <span class="stars-inner"></span>
+                                        </span>
+                                        <span>(5 Reviews)</span>
+                                    </p>
+                                </div>
+                                <!-- .listing__detail -->
+                            </div>
+                            <!-- .listing__wrapper -->
+                        </div>
+                        <!-- .listing -->
+                    </div>
+                    <!-- .col -->
+
+                </div>
+                <!-- .row -->
+                <div class="t-center load-more">
+                    
+                    <button class="button button--secoundary load-more-btn button--pill">Prev.</button>
+                    <button class="button button--primary load-more-btn button--pill">1</button>
+                    <button class="button button--secoundary load-more-btn button--pill">2</button>
+                    <button class="button button--secoundary load-more-btn button--pill">3</button>
+                    <button class="button button--secoundary load-more-btn button--pill">...</button>
+                    <button class="button button--secoundary load-more-btn button--pill">Next</button>
+                </div>
+            </div>
+            <!-- .container -->
+          
+        </div><!-- .col -->
+
+        <div class="col-lg-4">
+          <div class="listing-widget bg-white hover-effect sticky-top">
+            <h5>Your selections</h5>
+            
+
+            <ul class="min-list listing-contact-list">
+              <li class="d-flex align-items-center c-silver-charlice listing-contact">
+                <a href="#">
+                    <i class="fa fa-close listing-contact__icon"></i>
+                </a>
+                
+                <span class="c-primary"><b>#Hotel Name</b> <br>#num & type of rooms <br>#price</span>
+              </li>
+
+              <li class="d-flex align-items-center c-silver-charlice listing-contact">
+                <a href="#">
+                    <i class="fa fa-close listing-contact__icon"></i>
+                </a>
+                <span class="c-primary"><b>#Transport Name</b> <br>#type of cars <br>#price</span>
+              </li>
+
+              <li class="d-flex align-items-center c-silver-charlice listing-contact">
+                <a href="#">
+                    <i class="fa fa-close listing-contact__icon"></i>
+                </a>
+                <span class="c-primary"><b>#Hotel Name</b> <br>#num & type of rooms <br>#price</span>
+              </li>
+
+            </ul><!-- .listing-contact-list -->
+            <p>Total Price: <b>#PRICE</b></p>
+
+            <a href="confirm-package-booking.html"><button
+              class="button button--primary button--block button--pill button--large"
+            >Make Reservation
+            </button>
+            </a>
+            
+          </div><!-- .listing-widget -->
+
+        </div><!-- .col -->
+      </div><!-- .row -->
+    </div>
+  </div>
+        
+
+        
+        <footer id="colophone" class="site-footer">
+<div class="t-center site-footer__primary">
+<div class="container">
+<div class="site-footer__logo">
+<a href="index.html">
+<h1 class="screen-reader-text">ZappBooking</h1>
+<img src="assets/images/logo-footer.png" alt="ZappBooking" />
+</a>
+</div>
+<p class="t-small">Find the best places to stay, eat or visit.</p>
+<ul class="min-list inline-list site-footer__links site-footer__social">
+<li>
+<a href="#">
+<i class="fa fa-facebook-f"></i>
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-twitter"></i>
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-pinterest"></i>
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-google-plus"></i>
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-linkedin"></i>
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-instagram"></i>
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-youtube"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="site-footer__secondary">
+<div class="container">
+<div class="site-footer__secondary-wrapper">
+<p class="site-footer__copyright">Copyright &copy; <span class="c-secondary">ZappBooking</span></p>
+<ul class="min-list inline-list site-footer__links site-footer__details">
+ <li>Developed by <a href="#">House of Innovation</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDyCxHyc8z9gMA5IlipXpt0c33Ajzqix4"></script>
+<script src="https://cdn.rawgit.com/googlemaps/v3-utility-library/master/infobox/src/infobox.js"></script>
+<script src="assets/scripts/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="assets/scripts/datedropper.pro.min.js"></script>
+
+<script>
+     $('#check-in').dateDropper({
+        large:true,
+        theme:'dateDropperTheme01',
+     })
+
+     $('#check-out').dateDropper({
+        large:true,
+        theme:'dateDropperTheme01',
+     })
+</script>
+</body>
+</html>

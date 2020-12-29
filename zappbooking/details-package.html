@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ZappBooking</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,600" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+</head>
+
+<body>
+<header id="masthead" class="site-header site-header--fluid bg-primary">
+  <div class="d-lg-flex justify-content-lg-between align-items-lg-center site-header__container">
+    <div class="d-lg-flex align-items-lg-center">
+      <div class="site-header__logo">
+        <a href="index.html">
+          <h1 class="screen-reader-text">ZappBooking</h1>
+          <img src="assets/images/logo-3.png" alt="ZappBooking" class="logo-1"/>
+        </a>
+      </div><!-- .site-header__logo -->
+
+
+    </div>
+
+    <div class="d-lg-flex align-items-lg-center">
+      <ul class="min-list main-navigation main-navigation--white">
+        <li>
+         <a href="index.html">Home</a>
+        </li>
+        <li>
+         <a href="bookings.html">Bookings</a>
+        </li>
+        <li>
+         <a href="aboutUs.html">About us</a>
+        </li>
+        <li>
+         <a href="contactUs.html">Contact</a>
+        </li>
+      </ul><!-- .main-navigation -->
+
+      <div class="user-action">
+        <a href="notification.html" class="sign-in c-white">
+          <i class="fa fa-bell"></i>
+        </a>
+        <a href="login.html" class="sign-in c-white">
+          <i class="fa fa-user"></i> Sign in
+        </a>
+      </div><!-- .user-action -->
+    </div>
+
+    <div class="d-lg-none nav-mobile">
+      <a href="#" class="nav-toggle js-nav-toggle nav-toggle--white">
+        <span></span>
+      </a><!-- .nav-toggle -->
+    </div><!-- .nav-mobile -->
+  </div><!-- .site-header__container -->
+</header><!-- #masthead -->
+    <div class="swiper-container single-listing-slider js-listing-gallery">
+        <div class="swiper-wrapper">
+            <figure class="swiper-slide">
+                <a href="assets/images/uploads/single-listing-slider-1.jpg" data-width="675" data-height="450" class="js-gallery-link">
+                    <img src="assets/images/uploads/single-listing-slider-1.jpg" alt="Single Listing Image" />
+                </a>
+            </figure>
+
+            <figure class="swiper-slide">
+                <a href="assets/images/uploads/single-listing-slider-2.jpg" data-width="675" data-height="450" class="js-gallery-link">
+                    <img src="assets/images/uploads/single-listing-slider-2.jpg" alt="Single Listing Image" />
+                </a>
+            </figure>
+
+            <figure class="swiper-slide">
+                <a href="assets/images/uploads/single-listing-slider-3.jpg" data-width="675" data-height="450" class="js-gallery-link">
+                    <img src="assets/images/uploads/single-listing-slider-3.jpg" alt="Single Listing Image" />
+                </a>
+            </figure>
+
+            <figure class="swiper-slide">
+                <a href="assets/images/uploads/single-listing-slider-4.jpg" data-width="675" data-height="450" class="js-gallery-link">
+                    <img src="assets/images/uploads/single-listing-slider-4.jpg" alt="Single Listing Image" />
+                </a>
+            </figure>
+        </div>
+        <!-- .swiper-wrapper -->
+        <span class="ion-chevron-left c-white listing-button listing-button-prev"></span>
+        <span class="ion-chevron-right c-white listing-button listing-button-next"></span>
+    </div>
+    <!-- .single-listing-slider -->
+    <div class="page-content page-content--no-b-bottom">
+        <section class="single-listing single-listing--layout-3">
+            <header class="listing-header">
+                <div class="container">
+                  <div class="listing-header__container">
+                    <div class="d-lg-flex justify-content-lg-between">
+                      <div class="listing-header__main">
+                        <div class="d-flex">
+                          <div class="listing-header__image">
+                                <img src="assets/images/uploads/single-listing.jpg" alt="Petersham Nurseries Cafe" class="listing-header__image-img" style="margin-top: 0" />
+                            </div>
+                            <!-- .listing-header__image -->
+
+                                    <div class="listing-header__content ">
+                                        <div class="d-sm-flex align-items-sm-center">
+                                            <h2 class="listing-header__title">#Package Name </h2> 
+                                        </div>
+
+                                        <ul class="min-list listing-header__detail">
+                                            <li>
+                                                <span class="listing__score t-center">8.5</span>
+                                                <span class="listing__review c-dusty-gray">
+                                                    <span class="stars-outer" data-rating="4.5">
+                                                        <span class="stars-inner"></span>
+                                                    </span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <h6>Price: #price</h6>
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            <span class="detail-shareSmall"><i class="fa fa-share "></i> Share</span>
+                                        </p>
+                                        <!-- .listing__header-detail -->
+                                    </div>
+                                    <!-- .listing-header__content -->
+                        </div><!-- .listing__wrapper -->
+                      </div><!-- .listing-header__main -->
+
+                      <ul class="min-list inline-list listing-actions detail-shareBig">
+                        <li class="t-center listing-action listing-action--share">
+                          <a href="#">
+                            <i class="fa fa-share-alt"></i>
+                            Share
+                          </a>
+                        </li>
+                      </ul><!-- .listing-actions -->
+                    </div>
+                  </div><!-- .listing-header__container -->
+                </div><!-- .container -->
+            </header><!-- .listing-header -->
+            <!-- .listing-header -->
+            
+            <div class="listing-main bg-wild-sand">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="about" class="listing-section bg-white hover-effect" data-matching-link="#about-link">
+                                <div class="listing-section__header">
+                                    <h3 class="listing-section__title">Description</h3>
+                                </div>
+                                <!-- .listing-section__header -->
+
+                                <div class="c-dove-gray">
+                                    <p>
+                                        Petershan Coffee is the East London cafe bringing people together by tackling homelessness one espresso at a time. At Second Shot you can get incredible coffee, great food, and a unique
+                                        atmosphere, and we just so happen to be changing lives.
+                                    </p>
+                                    <p>
+                                        We employ people who have been affected by homelessness, train them as top quality baristas, before transitioning them on to past or preferred employment. We're committed to taking our staff from
+                                        where they are to where they deserve to be.
+                                    </p>
+                                </div>
+                                <ul class="min-list listing-features c-dove-gray">
+                                    <li>Rooftop</li>
+                                    <li>Dress Code</li>
+                                    <li>VIP Section</li>
+                                    <li>Private Parties</li>
+                                    <li>Rooftop</li>
+                                    <li>Dress Code</li>
+                                    <li>VIP Section</li>
+                                    <li>Private Parties</li>
+                                    <li>Rooftop</li>
+                                    <li>Dress Code</li>
+                                    <li>VIP Section</li>
+                                    <li>Private Parties</li>
+                                </ul>
+                                <div class="c-dove-gray">
+                                    <p>
+                                        We operate a pay it forward system. This is where customers can pre pay for food and drink, and later someone in need can receive the goods free of charge. When you buy a pay it forward at second
+                                        shot, you can either draw on our pay it forward wall, or get 3 stamps on our loyalty card, drawing on our pay it forward wall, and then later someone in need can receive the goods free of charge.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- .listing-section -->
+
+                            <a href="confirm-package-booking.html">
+                                <button class="button button--primary button--block button--pill button--large">Select Package</button>
+                            </a>
+                            
+                            <br><br>
+
+
+                            <div id="reviews" class="listing-section bg-white hover-effect" data-matching-link="#reviews-link">
+
+                        	
+                                <div class="listing-section__header">
+                                    <h3 class="listing-section__title">Reviews</h3>
+                                </div>
+                                <!-- .listing-section__header -->
+
+                                <table class="listing-ratings">
+                                    <tr class="listing-rating">
+                                        <th>Excellent</th>
+                                        <td>
+                                            <span class="stars-outer" data-rating="5">
+                                                <span class="stars-inner"></span>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="progressbar-container">
+                                                <span class="progressbar" style="width: 89%;"></span>
+                                            </span>
+                                        </td>
+                                        <td class="c-dove-gray">89%</td>
+                                    </tr>
+                                    <!-- .listing-rating -->
+
+                                    <tr class="listing-rating">
+                                        <th>Good</th>
+                                        <td>
+                                            <span class="stars-outer" data-rating="4">
+                                                <span class="stars-inner"></span>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="progressbar-container">
+                                                <span class="progressbar" style="width: 11%;"></span>
+                                            </span>
+                                        </td>
+                                        <td class="c-dove-gray">11%</td>
+                                    </tr>
+                                    <!-- .listing-rating -->
+
+                                    <tr class="listing-rating">
+                                        <th>Average</th>
+                                        <td>
+                                            <span class="stars-outer" data-rating="3">
+                                                <span class="stars-inner"></span>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="progressbar-container">
+                                                <span class="progressbar" style="width: 3%;"></span>
+                                            </span>
+                                        </td>
+                                        <td class="c-dove-gray">3%</td>
+                                    </tr>
+                                    <!-- .listing-rating -->
+
+                                    <tr class="listing-rating">
+                                        <th>Rather Poor</th>
+                                        <td>
+                                            <span class="stars-outer" data-rating="2">
+                                                <span class="stars-inner"></span>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="progressbar-container">
+                                                <span class="progressbar" style="width: 0;"></span>
+                                            </span>
+                                        </td>
+                                        <td class="c-dove-gray">0%</td>
+                                    </tr>
+                                    <!-- .listing-rating -->
+
+                                    <tr class="listing-rating">
+                                        <th>Bad</th>
+                                        <td>
+                                            <span class="stars-outer" data-rating="1">
+                                                <span class="stars-inner"></span>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="progressbar-container">
+                                                <span class="progressbar" style="width: 0;"></span>
+                                            </span>
+                                        </td>
+                                        <td class="c-dove-gray">0%</td>
+                                    </tr>
+                                    <!-- .listing-rating -->
+                                </table>
+                                <!-- .listing-ratings -->
+
+                                <ul class="min-list listing-review-list">
+                                    <li class="listing-review">
+                                        <div class="d-flex">
+                                            <div class="listing-review__avatar">
+                                                <img src="assets/images/uploads/listing-review-1.png" alt="Avatar" />
+                                            </div>
+                                            <!-- .listing-review__avatar -->
+
+                                            <div class="listing-review__content">
+                                                <header class="listing-review__header">
+                                                    <div class="d-sm-flex justify-content-sm-between c-silver-charlice">
+                                                        <div>
+                                                            <span class="stars-outer" data-rating="4">
+                                                                <span class="stars-inner"></span>
+                                                            </span>
+                                                            <span>8.0 - Good</span>
+                                                        </div>
+
+                                                        <span>Written on October 9, 2017</span>
+                                                    </div>
+                                                </header>
+                                                <!-- .listing-review__header -->
+
+                                                <div class="listing-review__review">
+                                                    <p>
+                                                        Love the trip! CEO and crew were attentive to our needs and sensed a real desire to make it as wonderful as possible. Did all they could make sure had top snorkeling experiences,
+                                                        including see illusive manta rays!
+                                                    </p>
+                                                </div>
+
+                                                <footer class="listing-review__footer">
+                                                    <button class="button button--like c-white">
+                                                        <i class="fa fa-thumbs-up"></i>
+                                                    </button>
+                                                </footer>
+                                            </div>
+                                            <!-- .listing-review__content -->
+                                        </div>
+                                    </li>
+                                    <!-- .listing-review -->
+
+                                    <li class="listing-review">
+                                        <div class="d-flex">
+                                            <div class="listing-review__avatar">
+                                                <img src="assets/images/uploads/listing-review-2.png" alt="Avatar" />
+                                            </div>
+                                            <!-- .listing-review__avatar -->
+
+                                            <div class="listing-review__content">
+                                                <header class="listing-review__header">
+                                                    <div class="d-sm-flex justify-content-sm-between c-silver-charlice">
+                                                        <div>
+                                                            <span class="stars-outer" data-rating="4.5">
+                                                                <span class="stars-inner"></span>
+                                                            </span>
+                                                            <span>9.0 - Excellent</span>
+                                                        </div>
+
+                                                        <span>Written on October 9, 2017</span>
+                                                    </div>
+                                                </header>
+                                                <!-- .listing-review__header -->
+
+                                                <div class="listing-review__review">
+                                                    <p>
+                                                        Love the trip! CEO and crew were attentive to our needs and sensed a real desire to make it as wonderful as possible. Did all they could make sure had top snorkeling experiences,
+                                                        including see illusive manta rays!
+                                                    </p>
+                                                </div>
+
+                                                <div class="listing-review__image"></div>
+                                                <!-- .listing-review__image -->
+
+                                                <footer class="listing-review__footer">
+                                                    <button class="button button--like c-white">
+                                                        <i class="fa fa-thumbs-up"></i>
+                                                    </button>
+                                                </footer>
+                                            </div>
+                                            <!-- .listing-review__content -->
+                                        </div>
+                                    </li>
+                                    <!-- .listing-review -->
+
+                                    <li class="listing-review">
+                                        <div class="d-flex">
+                                            <div class="listing-review__avatar">
+                                                <img src="assets/images/uploads/listing-review-3.png" alt="Avatar" />
+                                            </div>
+                                            <!-- .listing-review__avatar -->
+
+                                            <div class="listing-review__content">
+                                                <header class="listing-review__header">
+                                                    <div class="d-sm-flex justify-content-sm-between c-silver-charlice">
+                                                        <div>
+                                                            <span class="stars-outer" data-rating="4">
+                                                                <span class="stars-inner"></span>
+                                                            </span>
+                                                            <span>8.0 - Good</span>
+                                                        </div>
+
+                                                        <span>Written on October 9, 2017</span>
+                                                    </div>
+                                                </header>
+                                                <!-- .listing-review__header -->
+
+                                                <div class="listing-review__review">
+                                                    <p>
+                                                        Love the trip! CEO and crew were attentive to our needs and sensed a real desire to make it as wonderful as possible. Did all they could make sure had top snorkeling experiences,
+                                                        including see illusive manta rays!
+                                                    </p>
+                                                </div>
+
+                                                <footer class="listing-review__footer">
+                                                    <button class="button button--like c-white">
+                                                        <i class="fa fa-thumbs-up"></i>
+                                                    </button>
+                                                </footer>
+                                            </div>
+                                            <!-- .listing-review__content -->
+                                        </div>
+                                    </li>
+                                    <!-- .listing-review -->
+                                </ul>
+                                <!-- .listing-review-list -->
+                                
+                            </div>
+                            <!-- .listing-section -->
+
+                            <div id="add-review" class="listing-section bg-white hover-effect" data-matching-link="#add-review-link">
+                                <div class="listing-section__header">
+                                    <h3 class="listing-section__title">Add Review</h3>
+                                </div>
+                                <!-- .listing-section__header -->
+
+                                <form action="/" method="post">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <span class="form-label">Your rating</span>
+                                                <ul class="min-list inline-list stars">
+                                                    <li class="star" data-rating="1">
+                                                        <i class="fa fa-star"></i>
+                                                    </li>
+                                                    <li class="star" data-rating="2">
+                                                        <i class="fa fa-star"></i>
+                                                    </li>
+                                                    <li class="star" data-rating="3">
+                                                        <i class="fa fa-star"></i>
+                                                    </li>
+                                                    <li class="star" data-rating="4">
+                                                        <i class="fa fa-star"></i>
+                                                    </li>
+                                                    <li class="star" data-rating="5">
+                                                        <i class="fa fa-star"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- .form-group -->
+                                        </div>
+                                        <!-- .col -->
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="review-name">Your full name *</label>
+                                                <input type="text" id="review-name" name="name" class="form-input form-input--large form-input--border-c-alto" placeholder="John Doe" required />
+                                            </div>
+                                            <!-- .form-group -->
+                                        </div>
+                                        <!-- .col -->
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="review-email">Your email *</label>
+                                                <input type="email" id="review-email" name="email" class="form-input form-input--large form-input--border-c-alto" placeholder="johndoe@gmail.com" required />
+                                            </div>
+                                            <!-- .form-group -->
+                                        </div>
+                                        <!-- .col -->
+
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="review-message">Your review</label>
+                                                <textarea name="message" id="review-message" rows="10" class="form-input form-input--large form-input--border-c-alto" placeholder="Your review"></textarea>
+                                            </div>
+                                            <!-- .form-group -->
+                                        </div>
+                                        <!-- .col -->
+
+                                        <div class="col-md-12">
+                                            <div class="form-group--submit">
+                                                <button class="button button--large button--square button--primary" type="submit">Send Review</button>
+                                            </div>
+                                        </div>
+                                        <!-- .col -->
+                                    </div>
+                                    <!-- .row -->
+                                </form>
+                            </div>
+                            <!-- .listing-section -->
+                        </div>
+                        <!-- .col -->
+                    </div>
+                    <!-- .row -->
+                </div>
+            </div>
+        </section>
+        <!-- .single-listing -->
+        <section class="listing-list page-section listing-list--layout-1">
+            <div class="container">
+                <h2 class="page-section__title t-center ">More Packages</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="listing hover-effect shadow">
+                            <div class="listing__wrapper">
+
+                                    <a href="details-package.html">
+                                        <div id="gallery" class=" hover-effect" data-matching-link="#gallery-link">
+                                                <!-- .listing-section__header -->
+
+                                                <div class="swiper-container listing-gallery-top">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <img src="assets/images/uploads/listing-1.jpg" alt="Listing Image" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="assets/images/uploads/listing-2.jpg" alt="Listing Image" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="assets/images/uploads/listing-3.jpg" alt="Listing Image" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="assets/images/uploads/listing-4.jpg" alt="Listing Image" />
+                                                        </div>
+                                                    </div>
+                                                    <!-- .swiper-wrapper -->
+                                                    <span class="ion-chevron-left c-white listing-button listing-button-prev"></span>
+                                                    <span class="ion-chevron-right c-white listing-button listing-button-next"></span>
+                                                </div>
+                                                <!-- .listing-gallery-top -->
+
+                                                <!-- <div class="swiper-container listing-gallery-thumb">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide is-selected">
+                                                            <img src="assets/images/uploads/listing-1.jpg" alt="Listing Image" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="assets/images/uploads/listing-2.jpg" alt="Listing Image" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="assets/images/uploads/listing-3.jpg" alt="Listing Image" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="assets/images/uploads/listing-4.jpg" alt="Listing Image" />
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div> -->
+                                                <!-- .listing-gallery-thumb -->
+                                            </div>
+                                            <!-- .listing-section -->
+                                        <span class="label label--primary">10% Off</span>
+                                    </a>
+                                <div class="listing__detail">
+                                    <h3 class="listing__title">
+                                        <a href="details-package.html">Honeymoon Package 5</a>
+                                    </h3>
+                                    <p class="listing__location c-dusty-gray">
+                                        <i class="fa fa-map-marker"></i>
+                                        Jaflong, Ratargul, Bichanakandi
+                                    </p>
+                                    <p class="listing__review c-black">
+                                        <span class="price">3000 Taka / Per Person</span>
+                                    </p>
+                                </div>
+                                <!-- .listing__detail -->
+                            </div>
+                            <!-- .listing__wrapper -->
+                        </div>
+                        <!-- .listing -->
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-md-4">
+                        <div class="listing hover-effect shadow">
+                            <div class="listing__wrapper">
+
+                                    <a href="details-package.html">
+                                        <div id="gallery" class=" hover-effect" data-matching-link="#gallery-link">
+                                                <!-- .listing-section__header -->
+
+                                                <div class="swiper-container listing-gallery-top">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <img src="assets/images/uploads/listing-1.jpg" alt="Listing Image" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="assets/images/uploads/listing-2.jpg" alt="Listing Image" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="assets/images/uploads/listing-3.jpg" alt="Listing Image" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="assets/images/uploads/listing-4.jpg" alt="Listing Image" />
+                                                        </div>
+                                                    </div>
+                                                    <!-- .swiper-wrapper -->
+                                                    <span class="ion-chevron-left c-white listing-button listing-button-prev"></span>
+                                                    <span class="ion-chevron-right c-white listing-button listing-button-next"></span>
+                                                </div>
+                                                <!-- .listing-gallery-top -->
+                                            </div>
+                                            <!-- .listing-section -->
+                                        <span class="label label--primary">10% Off</span>
+                                    </a>
+                                <div class="listing__detail">
+                                    <h3 class="listing__title">
+                                        <a href="details-package.html">Honeymoon Package 5</a>
+                                    </h3>
+                                    <p class="listing__location c-dusty-gray">
+                                        <i class="fa fa-map-marker"></i>
+                                        Jaflong, Ratargul, Bichanakandi
+                                    </p>
+                                    <p class="listing__review c-black">
+                                        <span class="price">3000 Taka / Per Person</span>
+                                    </p>
+                                </div>
+                                <!-- .listing__detail -->
+                            </div>
+                            <!-- .listing__wrapper -->
+                        </div>
+                        <!-- .listing -->
+                    </div>
+                    <!-- .col -->
+                    
+                    <div class="col-md-4">
+                        <div class="listing hover-effect shadow">
+                            <div class="listing__wrapper">
+
+                                    <a href="details-package.html">
+                                        <div id="gallery" class=" hover-effect" data-matching-link="#gallery-link">
+                                                <!-- .listing-section__header -->
+
+                                                <div class="swiper-container listing-gallery-top">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <img src="assets/images/uploads/listing-1.jpg" alt="Listing Image" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="assets/images/uploads/listing-2.jpg" alt="Listing Image" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="assets/images/uploads/listing-3.jpg" alt="Listing Image" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="assets/images/uploads/listing-4.jpg" alt="Listing Image" />
+                                                        </div>
+                                                    </div>
+                                                    <!-- .swiper-wrapper -->
+                                                    <span class="ion-chevron-left c-white listing-button listing-button-prev"></span>
+                                                    <span class="ion-chevron-right c-white listing-button listing-button-next"></span>
+                                                </div>
+                                                <!-- .listing-gallery-top -->
+                                            </div>
+                                            <!-- .listing-section -->
+                                        <span class="label label--primary">10% Off</span>
+                                    </a>
+                                <div class="listing__detail">
+                                    <h3 class="listing__title">
+                                        <a href="details-package.html">Honeymoon Package 5</a>
+                                    </h3>
+                                    <p class="listing__location c-dusty-gray">
+                                        <i class="fa fa-map-marker"></i>
+                                        Jaflong, Ratargul, Bichanakandi
+                                    </p>
+                                    <p class="listing__review c-black">
+                                        <span class="price">3000 Taka / Per Person</span>
+                                    </p>
+                                </div>
+                                <!-- .listing__detail -->
+                            </div>
+                            <!-- .listing__wrapper -->
+                        </div>
+                        <!-- .listing -->
+                    </div>
+                    <!-- .col -->
+
+
+                </div>
+                <!-- .row -->
+                <div class="t-center load-more-2">
+                    <a href="packages.html">
+                        <button class="button button--primary button--medium button--pill load-more-2-btn shadow">View All Packages</button>
+                    </a>
+                    
+                </div>
+            </div>
+            <!-- .container -->
+        </section>
+
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <!-- Background of PhotoSwipe.
+   It's a separate element as animating opacity is fater than rgba(). -->
+            <div class="pswp__bg"></div>
+
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+                <!-- Container that holds slides.
+    PhotoSwipe keeps only 3 of them in the DOM to save memory.
+    Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .page-content -->
+    <div class="popup" id="popup">
+        <div class="popup-box center c-white">
+          <div class="icon">
+            <i class="fa fa-check"></i>
+          </div>
+          <div class="title">
+            Confirmed!!
+          </div>
+          <div class="description ">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur necessitatibus deserunt expedita quaerat eius aspernatur, laudantium amet repellendus? Voluptatem vitae eos odit iure accusantium incidunt. Qui cupiditate ratione magnam dicta.
+          </div>
+          <div class="dismiss-btn">
+            <a href="index.html" id="dismiss-popup-btn " class="button--primary button--pill button--medium">
+             Ok,Thanks</a>
+          </div>
+        </div>   
+      </div>        
+      
+      <div class="">
+      <a href="#popup">
+        <button id="open-popup-btn" class="button button--block button--square button--primary ">popup </button>
+      </a> 
+      </div>
+    <footer id="colophone" class="site-footer">
+<div class="t-center site-footer__primary">
+<div class="container">
+<div class="site-footer__logo">
+<a href="index.html">
+<h1 class="screen-reader-text">ZappBooking</h1>
+<img src="assets/images/logo-footer.png" alt="ZappBooking" />
+</a>
+</div>
+<p class="t-small">Find the best places to stay, eat or visit.</p>
+<ul class="min-list inline-list site-footer__links site-footer__social">
+<li>
+<a href="#">
+<i class="fa fa-facebook-f"></i>
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-twitter"></i>
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-pinterest"></i>
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-google-plus"></i>
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-linkedin"></i>
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-instagram"></i>
+</a>
+</li>
+<li>
+<a href="#">
+<i class="fa fa-youtube"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="site-footer__secondary">
+<div class="container">
+<div class="site-footer__secondary-wrapper">
+<p class="site-footer__copyright">Copyright &copy; <span class="c-secondary">ZappBooking</span></p>
+<ul class="min-list inline-list site-footer__links site-footer__details">
+ <li>Developed by <a href="#">House of Innovation</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</footer>
+<script>
+    function noScroll(){
+      window.scrollTo(0,0);
+    }
+      document.getElementById("open-popup-btn").addEventListener("click", function(){
+      document.getElementsByClassName("popup")[0].classList.add("active");
+      window.addEventListener("scroll", noScroll);
+    });
+    </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDyCxHyc8z9gMA5IlipXpt0c33Ajzqix4"></script>
+<script src="https://cdn.rawgit.com/googlemaps/v3-utility-library/master/infobox/src/infobox.js"></script>
+<script src="assets/scripts/app.js"></script>
+</body>
+</html>
+
+

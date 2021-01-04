@@ -2984,6 +2984,42 @@ textarea {
     display: none !important;
   }
 }
+.search-form2 {
+  display: block;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .search-form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+   
+  }
+}
+.search-form2 .form-group__wrapper:first-of-type {
+  /* border-right: 1px solid #eeeeee; */
+}
+.search-form2 .search-form2Element1{
+  width:80%;
+  padding-left: 10px;
+}
+.search-form2 .search-form2Element2{
+  width:20%;
+  padding-right: 10px;
+}
+.search-form2 .form-group__wrapper:first-of-type > * {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.search-form2 .form-group__wrapper:last-of-type > * {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+}
 .action {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-out;

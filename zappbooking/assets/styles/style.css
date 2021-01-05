@@ -2986,7 +2986,8 @@ textarea {
 }
 .search-form2 {
   display: block;
-  width: 100%;
+  padding: 0 15px;
+  /* width: 100%; */
 }
 @media screen and (max-width: 992px) {
   .search-form2 {
@@ -3008,7 +3009,7 @@ textarea {
 }
 .search-form2 .search-form2Element2{
   width:20%;
-  padding-right: 10px;
+  /* padding-right: 10px; */
 }
 .search-form2 .form-group__wrapper:first-of-type > * {
   border-top-left-radius: 20px;
@@ -20641,7 +20642,10 @@ header.carousel-inner.item{
   max-width: 200px;
 }
 .search-btn{
-  background-color: #505050;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #4d4d4d;
+  /* background-color: #FCC400; */
   color:white;
   transition: all .3s ease-in-out;
 }

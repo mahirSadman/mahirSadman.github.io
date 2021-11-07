@@ -15,14 +15,14 @@
 
 
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Mayesha's Bday</title>
 </head>
 
 <body style="min-height: 100vh;">
     <div class="container">
         <div class="row" style="height: 98vh; padding: 20px 0; ">
             <div class="col-lg-8 d-flex flex-column" style="height: 100%; position: relative;">
-                <div id="words" class="words self-stretch flex-fill">
+                <div id="words" class="words self-stretch flex-fill ">
                     <div id="wordby">
                         <p id="word" class="word"></p>
                         <span id="by" class="by"></span>
@@ -36,13 +36,16 @@
                 </div>
             </div>
             <div class="col-lg-4 d-flex flex-column " style=" height: 100%;">
-                <div class="name">
-                    <h1 class="name1">Mayesha </h1>
-                    <h1 class="name2"> Tafannum</h1>
+
+                <div class=" mt-auto" style="margin: 0 auto;">
+                    <div class="name">
+                        <h1 class="name1">Mayesha </h1>
+                        <h1 class="name2"> Tafannum</h1>
+                    </div>
+                    <img class="img" src="Untitled-1.png" alt="A image of Mayesha Tafannum">
                 </div>
-                <div class="img mt-auto" style="margin: 0 auto;">
-                    <img src="Untitled-1.png" alt="A image of Mayesha Tafannum">
-                </div>
+                <p class="deve">Developed by <a href="https://www.facebook.com/mahir.punna" target="_blank">Mahir
+                        Sadman</a></p>
             </div>
         </div>
     </div>
@@ -52,8 +55,125 @@
 
 
     <script>
-        const words = ["Saab", "Volvo", "BMW"];
+        // const words = ["Saab", "Volvo", "BMW"];
         const bys = ["aabbba", "ammmaa", "kaakkuu"];
+        const words = [
+            {
+                word: 'Energetic',
+                by: 'Zaman',
+            },
+            {
+                word: 'Adorable',
+                by: 'Munthakim',
+            },
+            {
+                word: 'Lovely',
+                by: 'Labib',
+            },
+            {
+                word: 'Charming',
+                by: 'Farnaz',
+            },
+            {
+                word: 'Sweetheart',
+                by: 'Tasfia',
+            },
+            {
+                word: 'Pretty',
+                by: 'Shanjida',
+            },
+            {
+                word: 'Caring',
+                by: 'Shadman',
+            },
+            {
+                word: 'Self Dependent',
+                by: 'Jarin',
+            },
+            {
+                word: 'Friendly',
+                by: 'Nihal',
+            },
+            {
+                word: 'Masterpiece',
+                by: 'Saiyem',
+            },
+            {
+                word: 'Sweetest',
+                by: 'Nabila',
+            },
+            {
+                word: 'Dazzling',
+                by: 'Iffaat',
+            },
+            {
+                word: 'Graceful',
+                by: 'Nijhum',
+            },
+            {
+                word: 'Cutie pie',
+                by: 'Abrar',
+            },
+            {
+                word: 'Naughty',
+                by: 'Jubair',
+            },
+            {
+                word: 'Charming',
+                by: 'Mehraj',
+            },
+            {
+                word: 'Adorable',
+                by: 'Rashidul',
+            },
+            {
+                word: 'Inspiration',
+                by: 'Rafin',
+            },
+            {
+                word: 'Smart',
+                by: 'Alamin',
+            },
+            {
+                word: 'Naughty',
+                by: 'Jubair',
+            },
+            {
+                word: 'Dreamatic',
+                by: 'Herself',
+            },
+            {
+                word: 'Humble',
+                by: 'Mubassir',
+            },
+            {
+                word: 'Friendly',
+                by: 'Moriom',
+            },
+            {
+                word: 'Supportive',
+                by: 'Solaiman',
+            },
+            {
+                word: 'Decent',
+                by: 'Safikul',
+            },
+            {
+                word: 'Soul Sister',
+                by: 'Redwan',
+            },
+            {
+                word: 'Best Mentor Ever',
+                by: 'Ali newaz',
+            },
+            {
+                word: 'Best',
+                by: 'Akram',
+            },
+
+
+
+        ];
         function newWord() {
 
             // var w = window.innerWidth;
@@ -74,8 +194,8 @@
             var by = document.getElementById("by");
             var wordno = (Math.floor((Math.random() * (words.length)) + 0));
 
-            word.textContent = ("#" + words[wordno]);
-            by.textContent = ("by- " + bys[wordno]);
+            word.textContent = ("#" + words[wordno].word);
+            by.textContent = ("by- " + words[wordno].by);
 
             wordby.style.position = "absolute";
             wordby.style.top = (vertical + "px");

@@ -18,7 +18,7 @@ body {
     color: #e1f8ff;
 }
 .bd{
-    /* font-family: 'Dancing Script', cursive; */ 
+    /* font-family: 'Dancing Script', cursive; */
     font-family: 'Parisienne', cursive;
     font-size: 180px;
     color: #4cc9f0;
@@ -31,7 +31,7 @@ body {
 }
 .name{
     margin: 0 auto -28px auto;
-    padding: auto 60px;
+    padding: 0 60px;
     color: #e1f8ff;
 
     /* text-shadow: 2px 2px 3px rgba(247,37,133,0.6); */
@@ -42,7 +42,7 @@ body {
     font-family: 'Mohave', sans-serif;
     font-size: 70px;
     font-size:  3.9em; /* 40px/16=2.5em */
-    margin-bottom: -5;
+    margin-bottom: -5px;
 }
 .name1{
     float: left;
@@ -52,8 +52,9 @@ body {
 }
 .img{
     margin: 0 auto 0 auto;
-
+    padding-top: 0;
 }
+
 .word{
     font-family: 'Mohave', sans-serif;
     font-size: 50px;
@@ -65,6 +66,14 @@ body {
     margin-top: 0;
     padding-top: 0;
     float: right;
+}
+.deve{
+    text-align: right; 
+    margin-bottom: 0; 
+    padding-bottom: 0;
+}
+.deve a{
+    color: #212529;
 }
 .fade-in-text {
     display: inline-block;
@@ -105,5 +114,7 @@ body {
     }
     .name{
         margin-top: 70px;
+        justify-content: center;
     }
+
   }

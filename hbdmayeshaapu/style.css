@@ -1,0 +1,94 @@
+body {
+    background: rgb(103,26,251);
+    padding-left: 30px;
+    padding-right: 30px;
+    /* background: linear-gradient(48deg, rgba(122, 59, 244, 1) 0%, rgba(90, 28, 212, 1) 100%); */
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Parisienne&display=swap');
+
+.happy{
+    font-family: 'Mohave', sans-serif;
+    font-weight: 600;
+    margin-left: 120px;
+    margin-bottom: -16px;
+    font-size: 35px;
+    color: #e1f8ff;
+}
+.bd{
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Parisienne', cursive;
+    font-size: 180px;
+    color: #4cc9f0;
+    font-weight: 500;
+}
+.para{
+    font-size: 28px;
+    margin-left: 110px;
+    color: black;
+}
+.name{
+    margin: 0 auto -28px auto;
+    padding: auto 60px;
+    color: #e1f8ff;
+
+    /* text-shadow: 2px 2px 3px rgba(247,37,133,0.6); */
+    font-weight: 600;
+    
+}
+.name h1{
+    font-family: 'Mohave', sans-serif;
+    font-size: 70px;
+    font-size:  3.9em; /* 40px/16=2.5em */
+    margin-bottom: -5;
+}
+.name1{
+    float: left;
+}
+.name2{
+    float: right;
+}
+.img{
+    margin: 0 auto 0 auto;
+
+}
+.word{
+    font-family: 'Mohave', sans-serif;
+    font-size: 50px;
+    color: #74dfff;
+}
+.fade-in-text {
+    display: inline-block;
+    animation: fadeIn linear 5s;
+    -webkit-animation: fadeIn linear 5s;
+    -moz-animation: fadeIn linear 5s;
+    -o-animation: fadeIn linear 5s;
+    -ms-animation: fadeIn linear 5s;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }

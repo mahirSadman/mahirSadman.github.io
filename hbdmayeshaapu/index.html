@@ -21,9 +21,13 @@
 <body style="min-height: 100vh;">
     <div class="container">
         <div class="row" style="height: 98vh; padding: 20px 0; ">
-            <div class="col-md-8 d-flex flex-column" style="height: 100%; position: relative;">
+            <div class="col-lg-8 d-flex flex-column" style="height: 100%; position: relative;">
                 <div id="words" class="words self-stretch flex-fill">
-                    <p id="word" class="word"></p>
+                    <div id="wordby">
+                        <p id="word" class="word"></p>
+                        <span id="by" class="by"></span>
+                    </div>
+
                 </div>
                 <div class="wish mt-auto">
                     <h2 class="happy">Happy</h2>
@@ -31,10 +35,10 @@
                     <!-- <h4 class="para">to the coolest</h4> -->
                 </div>
             </div>
-            <div class="col-md-4 d-flex flex-column " style=" height: 100%;">
+            <div class="col-lg-4 d-flex flex-column " style=" height: 100%;">
                 <div class="name">
-                    <h1 class="name1">Mayesha</h1>
-                    <h1 class="name2">Tafannum</h1>
+                    <h1 class="name1">Mayesha </h1>
+                    <h1 class="name2"> Tafannum</h1>
                 </div>
                 <div class="img mt-auto" style="margin: 0 auto;">
                     <img src="Untitled-1.png" alt="A image of Mayesha Tafannum">
@@ -49,7 +53,7 @@
 
     <script>
         const words = ["Saab", "Volvo", "BMW"];
-
+        const bys = ["aabbba", "ammmaa", "kaakkuu"];
         function newWord() {
 
             // var w = window.innerWidth;
@@ -65,12 +69,17 @@
             // var horizontals = [horizontal1, horizontal2];
             // var horizontal = horizontals[(Math.floor((Math.random() * 2) + 0))];
 
+            var wordby = document.getElementById("wordby");
             var word = document.getElementById("word");
+            var by = document.getElementById("by");
+            var wordno = (Math.floor((Math.random() * (words.length)) + 0));
 
-            word.textContent = ("#" + words[(Math.floor((Math.random() * (words.length)) + 0))]);
-            word.style.position = "absolute";
-            word.style.top = (vertical + "px");
-            word.style.left = (horizontal + "px");
+            word.textContent = ("#" + words[wordno]);
+            by.textContent = ("by- " + bys[wordno]);
+
+            wordby.style.position = "absolute";
+            wordby.style.top = (vertical + "px");
+            wordby.style.left = (horizontal + "px");
 
             console.log(height, width, vertical, horizontal);
         }

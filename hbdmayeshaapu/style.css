@@ -58,6 +58,13 @@ body {
     font-family: 'Mohave', sans-serif;
     font-size: 50px;
     color: #74dfff;
+    margin-bottom: -22px;
+    padding-bottom: 0;
+}
+.by{
+    margin-top: 0;
+    padding-top: 0;
+    float: right;
 }
 .fade-in-text {
     display: inline-block;
@@ -91,4 +98,12 @@ body {
   @-ms-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
+  }
+  @media screen and (max-width: 992px) {
+    .wish {
+        padding-top: 80px;
+    }
+    .name{
+        margin-top: 70px;
+    }
   }

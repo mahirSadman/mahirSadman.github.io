@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Fare Calculator</title>
+
+    <style>
+      body{
+        margin-top:50px;
+        background:#333;
+        color:#fff;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h1 class="display-6 text-center mb-2">Hankipanki Fare Callculator</h1>
+        <form>
+          <div class="form-group">
+            <label for="baseFareInput" class="">Base Fare</label>
+            <input id="baseFareInput" type="number" class="form-control form-control-lg" placeholder="Enter Base Fare">
+          </div>
+
+          <div class="form-group">
+            <label for="totalFareInput" class="">Total Fare</label>
+            <input id="totalFareInput" type="number" class="form-control form-control-lg" placeholder="Enter Total Fare">
+          </div>
+          <div class="form-group d-inline-flex">
+            <div class="mr-1">
+              <label for="commissionPercentageInput" class="mr-1">Commission Percentage (%) </label>
+              <input id="commissionPercentageInput" type="number" class="form-control form-control-lg" placeholder="Enter Commission Percentage" value=7>
+            </div>
+            <div class="ml-1">
+              <label for="markupInput" class="">Markup Ammount</label>
+              <input id="markupInput" type="number" class="form-control form-control-lg" placeholder="Enter markup Value" value=300>
+            </div>
+            
+          </div>
+          
+        </form>
+        <div id="output">
+          <div class="card text-dark mb-2">
+            <div class="d-inline-flex">
+              <h5 class="ml-4 mr-2">Tax:</h5>
+              <h5 id="taxOutput"></h5>
+            </div>
+            <div class="d-inline-flex">
+              <h5 class="ml-4 mr-2">Commision:</h5>
+              <h5 id="comOutput"></h5>
+            </div>
+            <div class="d-inline-flex">
+              <h5 class="ml-4 mr-2">Net Fare:</h5>
+              <h5 id="netFareOutput"></h5>
+            </div>
+            <div class="d-inline-flex">
+              <h5 class="ml-4 mr-2">Vat:</h5>
+              <h5 id="vatOutput"></h5>
+            </div>
+            <div class="d-inline-flex">
+              <h5 class="ml-4 mr-2">Airline Fare:</h5>
+              <h5 id="airlineFareOutput"></h5>
+            </div>
+          </div>
+
+          <div class="card bg-primary">
+            <div class="d-inline-flex">
+              <h2 class="ml-4 mr-2">Selling Price:</h2>
+              <h2 id="sellingPriceOutput"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script type="text/javascript">
+      document.getElementById("output").style.visibility = "hidden";
+      let basefare = 0;
+      let totalfare = 0;
+      let commissionPercentage = 7;
+      let vatPercentage = 0.3;
+      let markup = 300;
+
+      function calculate() {
+
+        let tax = totalfare - basefare
+        let commission = ((basefare * commissionPercentage)/100);
+        let net = basefare-commission;
+        let vat = ((totalfare * vatPercentage)/100);
+        let airlineFare = tax + net + vat;
+        let sellingPrice = parseInt(markup) + parseInt(airlineFare);
+
+        document.getElementById("taxOutput").innerHTML = tax;
+        document.getElementById("comOutput").innerHTML = commission ;
+        document.getElementById("netFareOutput").innerHTML = net ;
+        document.getElementById("vatOutput").innerHTML = vat ;
+        document.getElementById("airlineFareOutput").innerHTML = airlineFare ;
+        document.getElementById("sellingPriceOutput").innerHTML = sellingPrice;
+      }
+
+      document.getElementById("baseFareInput").addEventListener("input", function(e) {
+        document.getElementById("output").style.visibility = "visible";
+        basefare = e.target.value;
+        calculate();
+      });
+
+      document.getElementById("totalFareInput").addEventListener("input", function(e) {
+        document.getElementById("output").style.visibility = "visible";
+        totalfare = e.target.value;
+        calculate();
+      });
+
+      document.getElementById("commissionPercentageInput").addEventListener("input", function(e) {
+        document.getElementById("output").style.visibility = "visible";
+        commissionPercentage = e.target.value;
+        calculate();
+      });
+
+      document.getElementById("markupInput").addEventListener("input", function(e) {
+        document.getElementById("output").style.visibility = "visible";
+        markup = e.target.value;
+        calculate();
+      });
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

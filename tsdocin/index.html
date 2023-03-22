@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>TS DocIn</title>
+
+    <style>
+      body{
+        margin-top:50px;
+        background:#333;
+        color:#fff;
+      }
+      .typeInput{
+        max-width: 50px;
+      }
+      .nationalityInput{
+        max-width: 72px;
+      }
+      .issueCountryInput{
+        max-width: 72px;
+      }
+      .sexInput{
+        max-width: 50px;
+      }
+      .airlineInput{
+        max-width: 60px;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2 class="display-5 text-center mb-3">Ticketshala Doc-In </h2>
+        <form>
+          <div class="form-group">
+            <input id="flightName" type="text" class="form-control form-control-lg text-light bg-dark border-0 text-center" placeholder="Enter Flight Name">
+          </div>
+
+          <div class="form-group d-flex justify-content-between">
+            <div class="typeInput">
+              <label for="typeInput" class="">Type</label>
+              <input id="typeInput" type="text" class="form-control form-control-lg text-uppercase" required placeholder="" value="P">
+            </div>
+
+            <div class="airlineInput">
+              <label for="airlineInput" class="">Airline</label>
+              <input id="airlineInput" type="text" class="form-control form-control-lg text-uppercase" required placeholder="" value="">
+            </div>
+
+            <div class="nationalityInput">
+              <label for="nationalityInput" class="">Nationality</label>
+              <input id="nationalityInput" type="text" class="form-control form-control-lg text-uppercase" required placeholder="" value="BGD">
+            </div>
+
+            <div class="passportNumberInput">
+              <label for="passportNumberInput" class="">Passport</label>
+              <input id="passportNumberInput" type="text" class="form-control form-control-lg text-uppercase" required placeholder="Enter Passport Number">
+            </div>
+          </div>
+
+          <div class="form-group d-flex justify-content-between align-items-end">
+
+            <div class="mr-1 sexInput">
+              <label for="sexInput" class="">Sex</label>
+              <input id="sexInput" type="text" class="form-control form-control-lg text-uppercase" required placeholder="" value="M">
+            </div>
+
+            <div class="mr-1 issueCountryInput">
+              <label for="issueCountryInput" class="">Issue</label>
+              <input id="issueCountryInput" type="text" class="form-control form-control-lg text-uppercase" required placeholder="" value="BGD">
+            </div>
+
+            <div class="ml-1 lastNameInput">
+              <label for="lastNameInput" class="">Surname</label>
+              <input id="lastNameInput" type="text" class="form-control form-control-lg text-uppercase" required placeholder="Enter Last Name">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="mr-1 firstNameInput">
+              <label for="firstNameInput" class="">Given Name</label>
+              <input id="firstNameInput" type="text" class="form-control form-control-lg text-uppercase" required placeholder="Enter First Name">
+            </div>
+            
+          </div>
+
+          <div class="form-group d-flex justify-content-between align-items-end">
+
+            <div class="mr-1 DOBInput">
+              <label for="DOBInput" class="">Date of Birth (exm. 02JUL93)</label>
+              <input id="DOBInput" type="text" class="form-control form-control-lg text-uppercase" required placeholder="EXM. 02JUL93">
+            </div>
+
+            <div class="mr-1 DOEInput">
+              <label for="DOEInput" class="">Date of Expiry (exm. 24DEC23)</label>
+              <input id="DOEInput" type="text" class="form-control form-control-lg text-uppercase" required placeholder="EXM. 24DEC23">
+            </div>
+            
+          </div>
+
+          <button type="button" id="submit" class="btn btn-success btn-block mb-3">Submit & Copy</button>
+          
+        </form>
+        <div id="output">
+          <div class="card text-light mb-2" style="background:#333;">
+            
+            <div class="">
+              <h5 class="mr-2">SCode:</h5>
+              <h5 id="ScodeOutput"></h5>
+              <h5 class="mr-2">ACode:</h5>
+              <h5 id="AcodeOutput"></h5>
+              <h5 class="mr-2">GCode:</h5>
+              <h5 id="GcodeOutput"></h5>
+
+              <button type="button" id="check" class="btn btn-info mb-3">Check</button>
+              <button type="button" id="stop" class="btn btn-secondary mb-3">Stop</button>
+            </div>
+            <!-- <div class="d-inline-flex">
+              <h5 class="ml-4 mr-2">Net Fare:</h5>
+              <h5 id="netFareOutput"></h5>
+            </div>
+            <div class="d-inline-flex">
+              <h5 class="ml-4 mr-2">Vat:</h5>
+              <h5 id="vatOutput"></h5>
+            </div>
+            <div class="d-inline-flex">
+              <h5 class="ml-4 mr-2">Airline Fare:</h5>
+              <h5 id="airlineFareOutput"></h5>
+            </div> -->
+          </div>
+
+          <!-- <div class="card bg-primary">
+            <div class="d-inline-flex">
+              <h2 class="ml-4 mr-2">Selling Price:</h2>
+              <h2 id="sellingPriceOutput"></h2>
+            </div>
+          </div> -->
+        </div>
+        <div class="alert alert-warning" role="alert" style="margin-top: 50px;">
+          <p>This app is to assist Reservation dept. of ticketshala.com. After entering all info just paste it to a reservation officer. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; Ticketshala.com | Developed by: Mahir Sadman</small>
+    </div>
+  </footer>
+
+    <script type="text/javascript">
+      // document.getElementById("output").style.visibility = "hidden";
+      document.getElementById("output").style.display = "none";
+      document.getElementById("stop").style.display = "none";
+
+      
+
+      // function calculate() {
+
+      //   document.getElementById("codeOutput").innerHTML = commission ;
+      //   // document.getElementById("netFareOutput").innerHTML = net ;
+      //   // document.getElementById("vatOutput").innerHTML = vat ;
+      //   // document.getElementById("airlineFareOutput").innerHTML = airlineFare ;
+      //   // document.getElementById("sellingPriceOutput").innerHTML = sellingPrice;
+
+      // }
+      let type = "";
+      let airline= "";
+      let nationality = "";
+      let passport = "";
+      let sex = "";
+      let issueCountry = "";
+      let lastName = "";
+      let firstName = "";
+      let DOB = "";
+      let DOE = "";
+
+      
+
+      document.getElementById("submit").addEventListener("click", function(e) {
+        // document.getElementById("output").style.visibility = "visible";
+        
+        type = document.getElementById("typeInput").value;
+        airline = document.getElementById("airlineInput").value;
+        nationality = document.getElementById("nationalityInput").value;
+        passport = document.getElementById("passportNumberInput").value;
+        sex = document.getElementById("sexInput").value;
+        issueCountry = document.getElementById("issueCountryInput").value;
+        lastName = document.getElementById("lastNameInput").value;
+        firstName = document.getElementById("firstNameInput").value;
+        DOB = document.getElementById("DOBInput").value;
+        DOE = document.getElementById("DOEInput").value;
+
+        // let code= "3DOCS/"+ type +"/"+nationality+"/"+passport+"/"+issueCountry+"/"+DOB+"/"+sex+"/"+DOE+"/"+lastName+"/"+firstName+"-1.1";
+        if(type==""|| nationality=="" || passport=="" || issueCountry=="" || DOB=="" || lastName=="" || firstName==""){
+          alert("Please Fill all the fields");
+        }else{
+          let sabreCode= ["3DOCS", type, nationality, passport, issueCountry, DOB, sex, DOE, lastName, firstName].join('/');
+          sabreCode = sabreCode.toUpperCase().concat('-') ;
+
+          let first = ["SRDOCS", airline , "HK1"].join(''); 
+          let amadeusCode= [first, type, nationality, passport, issueCountry, DOB, sex, DOE, lastName, firstName].join('-');
+          amadeusCode = amadeusCode.toUpperCase().concat('/') ;
+
+          //SI.P1/SSRDOCSBGHK1/BGD/PP NO/BGD/DOB/GENDER/DOE/LASTNAME/GIVEN NAME
+          let mid = ["SSRDOCS", airline , "HK1"].join(''); 
+          let galileoCode= ["SI.P", mid, nationality, passport, issueCountry, DOB, sex, DOE, lastName, firstName].join('/');
+          galileoCode = galileoCode.toUpperCase() ;
+
+          let finalOutput= [sabreCode, amadeusCode, galileoCode].join('\r\n')
+          document.getElementById("ScodeOutput").innerHTML = sabreCode; 
+          document.getElementById("AcodeOutput").innerHTML = amadeusCode; 
+          document.getElementById("GcodeOutput").innerHTML = galileoCode; 
+          document.getElementById("submit").innerHTML = 'Code Copird'; 
+          navigator.clipboard.writeText(finalOutput);
+          document.getElementById("output").style.display = "block";
+          // alert("Code coppied");
+          // check();
+        }
+        
+      });
+
+      document.getElementById("check").addEventListener("click", function(e) {
+        check();
+        document.getElementById("check").style.display = "none";
+        document.getElementById("stop").style.display = "block";
+
+      });
+
+      document.getElementById("stop").addEventListener("click", function(e) {
+        speechSynthesis.cancel(); 
+        document.getElementById("stop").style.display = "none";
+        document.getElementById("check").style.display = "block";      
+      });
+      
+      function getVoices() {
+        let voices = speechSynthesis.getVoices();
+        if(!voices.length){
+          // some time the voice will not be initialized so we can call spaek with empty string
+          // this will initialize the voices 
+          let utterance = new SpeechSynthesisUtterance("");
+          speechSynthesis.speak(utterance);
+          voices = speechSynthesis.getVoices();
+        }
+        return voices;
+      }
+
+
+      function speak(text, voice, rate, pitch, volume) {
+        // create a SpeechSynthesisUtterance to configure the how text to be spoken 
+        let speakData = new SpeechSynthesisUtterance();
+        speakData.volume = volume; // From 0 to 1
+        speakData.rate = rate; // From 0.1 to 10
+        speakData.pitch = pitch; // From 0 to 2
+        speakData.text = text;
+        speakData.lang = 'en';
+        speakData.voice = voice;
+        
+        // pass the SpeechSynthesisUtterance to speechSynthesis.speak to start speaking 
+        speechSynthesis.speak(speakData);
+
+      }
+
+      function check() {
+
+        if ('speechSynthesis' in window) {
+
+        let voices = getVoices();
+        let rate = .6, pitch = 2, volume = 1;
+        // let text = "Spaecking with volume = 1 rate =1 pitch =2 ";
+        let passportStr= passport.split("");
+        let lastNameStr= lastName.split("");
+        let firstNameStr= firstName.split("");
+        let DOBStr= DOB;
+        let sexStr= sex;
+        let DOEStr= DOE;
+
+
+        let code= ["Passport Number;", passportStr, ";Surname;", lastNameStr, ";Given Name;", firstNameStr, ";Date of birth;", DOBStr, ";Gender;", sexStr, ";Date of Expiry;", DOEStr].join(' ')
+        speak(code, voices[5], rate, pitch, volume);
+
+        
+
+        // setTimeout(()=>{ // speak after 2 seconds 
+        //   rate = 0.5; pitch = 1.5, volume = 0.5;
+        //   // text = "Spaecking with volume = 0.5 rate = 0.5 pitch = 1.5 ";
+        //   // speak(text, voices[10], rate, pitch, volume );
+        // }, 2000);
+        }else{
+        console.log(' Speech Synthesis Not Supported '); 
+        }
+
+      }
+
+      // document.getElementById("totalFareInput").addEventListener("input", function(e) {
+      //   // document.getElementById("output").style.visibility = "visible";
+      //   document.getElementById("output").style.display = "block";
+      //   isInputTotal = 1;
+      //   totalfare = e.target.value;
+      //   calculate();
+      // });
+
+      // document.getElementById("taxAmmountInput").addEventListener("input", function(e) {
+      //   // document.getElementById("output").style.visibility = "visible";
+      //   document.getElementById("output").style.display = "block";
+      //   isInputTax = 1;
+      //   tax = e.target.value;
+      //   calculate();
+      // });
+
+      // document.getElementById("commissionPercentageInput").addEventListener("input", function(e) {
+      //   // document.getElementById("output").style.visibility = "visible";
+      //   document.getElementById("output").style.display = "block";
+      //   commissionPercentage = e.target.value;
+      //   calculate();
+      // });
+
+      // document.getElementById("markupInput").addEventListener("input", function(e) {
+      //   // document.getElementById("output").style.visibility = "visible";
+      //   document.getElementById("output").style.display = "block";
+      //   markup = e.target.value;
+      //   calculate();
+      // });
+
+      // document.getElementById("resetButton").onclick = function() {
+      //   isInputBase = 0;
+      //   isInputTax = 0;
+      //   isInputTotal = 0;
+      //   basefare = 0;
+      //   tax = 0;
+      //   totalfare = 0;
+      //   document.getElementById("baseFareInput").style.display = "block";
+      //   document.getElementById("taxAmmountInput").style.display = "block";
+      //   document.getElementById("totalFareInput").style.display = "block"
+
+      //   document.getElementById("baseFareInput").value = '';
+      //   document.getElementById("taxAmmountInput").value = '';
+      //   document.getElementById("totalFareInput").value = '';
+
+      //   document.getElementById("totalFareOutput").innerHTML = '';
+      //   document.getElementById("taxAmmountOutput").innerHTML = '';
+      //   document.getElementById("baseFareOutput").innerHTML = '';
+      //   document.getElementById("comOutput").innerHTML = '' ;
+      //   document.getElementById("netFareOutput").innerHTML = '' ;
+      //   document.getElementById("vatOutput").innerHTML = '' ;
+      //   document.getElementById("airlineFareOutput").innerHTML = '' ;
+      //   document.getElementById("sellingPriceOutput").innerHTML = '';
+
+      //   // document.getElementById("baseFareOutput").style.display = "none";
+      //   // document.getElementById("taxAmmountOutput").style.display = "none";
+      //   // document.getElementById("totalFareOutput").style.display = "none"
+
+
+      // };
+
+      
+      
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

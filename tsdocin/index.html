@@ -209,9 +209,9 @@
           let amadeusCode= [first, type, nationality, passport, issueCountry, DOB, sex, DOE, lastName, firstName].join('-');
           amadeusCode = amadeusCode.toUpperCase().concat('/') ;
 
-          //SI.P1/SSRDOCSBGHK1/BGD/PP NO/BGD/DOB/GENDER/DOE/LASTNAME/GIVEN NAME
+          //SI.P1/SSRDOCSBGHK1/P/BGD/PP NO/BGD/DOB/GENDER/DOE/LASTNAME/GIVEN NAME
           let mid = ["SSRDOCS", airline , "HK1"].join(''); 
-          let galileoCode= ["SI.P", mid, type, nationality, passport, issueCountry, DOB, sex, DOE, lastName, firstName].join('/');
+          let galileoCode= ["SI.P", mid, nationality, passport, issueCountry, DOB, sex, DOE, lastName, firstName].join('/');
           galileoCode = galileoCode.toUpperCase() ;
 
           let finalOutput= [sabreCode, amadeusCode, galileoCode].join('\r\n')
